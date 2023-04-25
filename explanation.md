@@ -4,7 +4,7 @@
 * Ok now let's get started with creating the microservice 
 
 ## Dockerfile Creation
-### Client Image Creation
+### Client Directory Image Creation
 
 * Started with creating Dockerfile to define how to build an image for the client side of our application.
 * The steps used to create the Dockerfile are as follows:
@@ -26,10 +26,11 @@
 * The run the image using the `sudo docker run -p 3000:3000 yolo_img`
 
 
-### Backend Image Creation
+### Backend Directory Image Creation
 
 * Started with creating a Dockerfile to define how to build an image for the backend side of our application.
 * The steps used are as follows:
+
     1. Create a base image using [node](https://hub.docker.com/_/node) from Docker Hub with the 20-alpine3.16 tag version.
     2. Create an app directory for the docker image. 
 	3. Copy all the dependancies needed from our local directory to the current directory of our Docker Image.

@@ -2,7 +2,7 @@
 FROM node:20-alpine3.16
 
 #Creating an application directory
-WORKDIR /app
+WORKDIR /usr/client/src/app
 
 #Install all dependancies needed to the current directory of our docker image
 COPY package.json package.json

@@ -38,7 +38,7 @@
     4. Install the node packages by running npm install.
 	5. Copy the local project directory to the current directory of the docker image
     7. Bind the application to a port for the docker daemon to map it.
-    8. Finally, use the `CMD [ "node", "server.js" ]` to start the app on the client side.
+    8. Finally, use the `CMD [ "npm", "start" ]` to start the app on the client side.
 
 * After creating the Dockerfile, I built the Image using the `sudo docker build . -t <name of image>` command. In this case the name of my image is `yolo_back_img`. 
 * The `-t` or `--tag` flag is used to set a name  to the image.

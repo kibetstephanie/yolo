@@ -1,4 +1,4 @@
-# # Creating a Microservice: Explanation
+# Creating a Microservice: Explanation
 
 * First install the required technologies and run the app locally to have a feel of the applications front and back end. The instructions are found in the README.md file
 * Ok now let's get started with creating the microservice 

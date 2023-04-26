@@ -24,6 +24,7 @@
 * After creating the Dockerfile, I built the Image using the `sudo docker build . -t <name of image>` command. In this case the name of my image is `yolo_img`. 
 * The `-t` or `--tag` flag is used to set a name  to the image.
 * The run the image using the `sudo docker run -p 3000:3000 yolo_img`
+* Notice that the image will run on port 3000.
 
 
 ### Backend Directory Image Creation
@@ -39,3 +40,10 @@
     7. Bind the application to a port for the docker daemon to map it.
     8. Finally, use the `CMD [ "node", "server.js" ]` to start the app on the client side.
 
+* After creating the Dockerfile, I built the Image using the `sudo docker build . -t <name of image>` command. In this case the name of my image is `yolo_back_img`. 
+* The `-t` or `--tag` flag is used to set a name  to the image.
+* Then connect your database to the application. I had to create a cluster in [MongoDB](https://www.mongodb.com/) then connect it to the code in VS Code using the link provided.
+* The run the image using the `sudo docker run -p 3000:3000 yolo_back_img`
+* Notice that the image will run on port 5000.
+
+* I ran both images at the same time then in the application, I added a product. It worked successfully.

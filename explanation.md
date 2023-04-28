@@ -27,6 +27,7 @@
 * The run the image using the `sudo docker run -p 3000:3000 yolo_client`
 * Notice that the image will run on port 3000.
 * You can find the client dockerfile [here](https://github.com/kibetstephanie/yolo/blob/master/client/Dockerfile)
+* After pushing to docker hub my image name changed to `kibetstephanie/yolo_client_imagev:1.0.0`
 
 
 ### Backend Directory Image Creation
@@ -43,11 +44,12 @@
     8. Finally, use the `CMD [ "npm", "start" ]` to start the app on the client side.
 
 * After creating the Dockerfile, I built the Image using the `sudo docker build . -t <name of image>` command. In this case the name of my image is `yolo_backend`. 
-* The `-t` or `--tag` flag is used to set a name  to the image.
 * Then connect your database to the application. I had to create a cluster in [MongoDB](https://www.mongodb.com/) then connect it to the code in VS Code using the link provided.
 * The run the image using the `sudo docker run -p 3000:3000 yolo_backend`
 * Notice that the image will run on port 5000.
 * You can find the backend dockerfile [here](https://github.com/kibetstephanie/yolo/blob/master/backend/Dockerfile)
+* After pushing to docker hub my image name changed to `kibetstephanie/yolo_backend_imagev:1.0.0`
+
 
 * I ran both images at the same time then in the application, I added a product. It worked successfully.
 
@@ -76,5 +78,22 @@
 
 ### Networks
 * I created a bridge network called `yolo_yolo_network` to connect the three containers (yolo_client_cont, yolo_back_cont, mongo:5.0.16) for the three services to a network using a bridge network driver.
+
+
+## 3. Pushing to Dockerhub
+
+* Pushing to dockerhub required a change to the image names. These are the new and current names:
+	* Client image: `kibetstephanie/yolo_backend_image:v1.0.0`
+	* Backend image: `kibetstephanie/yolo_backend_image:v1.0.0`
+
+* I followed the following steps to push:
+	1. `$sudo docker login` - to login to Dockerhub
+	2. `$sudo docker tag {old name of image}:{old tag of image} {docker username}/{new name of image}:{new tag of image}` - to tag the new image and give it a new name
+	3. `$sudo docker push {docker username}/{new name of image}:{new tag of image}` - pushes the image to github
+
+#########################################################
+
+- After finishing all the processes, my application was working successfully. I was able to add, update and delete products.
+- Made 27 commits more than the original Github Repo
 
 

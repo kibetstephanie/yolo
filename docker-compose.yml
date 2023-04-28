@@ -12,6 +12,8 @@ services:
       - 27017:27017
     volumes:
       - yolo_vol:/data/db
+    networks:
+      - yolo_network
 
   client:
     build: ./client
@@ -24,6 +26,8 @@ services:
       - 3000:3000
     depends_on: 
       - backend
+    networks:
+      - yolo_network
 
   backend:
     #image: backend:latest
@@ -35,7 +39,13 @@ services:
       - 5000:5000
     depends_on: 
       - database
+    networks:
+      - yolo_network
 
 volumes:
   yolo_vol:
     driver: local
+
+networks:
+  yolo_network:
+    driver: bridge

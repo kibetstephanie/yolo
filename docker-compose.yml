@@ -1,0 +1,41 @@
+version: '3'
+
+services:
+  database:
+    image: mongo:5.0.16
+    container_name: yolo_db
+    environment:
+      MONGO_DB: yolomy
+      #MONGO_INITDB_ROOT_USERNAME: root
+      #MONGO_INITDB_ROOT_PASSWORD: password
+    ports:
+      - 27017:27017
+    volumes:
+      - yolo_vol:/data/db
+
+  client:
+    build: ./client
+    #image: yolo_img:latest
+    container_name: yolo_client_cont
+    environment:
+      PORT: 3000
+      PROXY_API: http://backend:5000/
+    ports:
+      - 3000:3000
+    depends_on: 
+      - backend
+
+  backend:
+    #image: backend:latest
+    build: ./backend
+    container_name: yolo_back_cont
+    environment:
+      MONGODB_URI: mongodb://database:27017/yolomy
+    ports:
+      - 5000:5000
+    depends_on: 
+      - database
+
+volumes:
+  yolo_vol:
+    driver: local

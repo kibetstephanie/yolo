@@ -62,14 +62,10 @@
 * It is also going to use the local driver to store data.
 
 ### Containers
-
 #### Client Side
-* In the client dockerfile, an image called `yolo client` will be created that will be ran to create a container called `yolo_client_cont` from the docker-compose file.
-
+* In the client dockerfile, an image called `yolo_client` will be created that will be ran to create a container called `yolo_client_cont` from the docker-compose file.
 #### Backend Side
 * In the backend dockerfile, an image called `yolo_backend` will be created that will be ran to create a container called `yolo_back_cont` from the docker-compose file.
-
-
 #### Database Side
 * In the docker compose file, I created a container called `mongo:5.0.16` that will create from an image called `yolo_db`
 
@@ -77,5 +73,8 @@
 * The client side is bounded to port 3000
 * The backend side is bounded to port 5000
 * The client side is bounded to port 27017
+
+### Networks
+* I created a bridge network called `yolo_yolo_network` to connect the three containers (yolo_client_cont, yolo_back_cont, mongo:5.0.16) for the three services to a network using a bridge network driver.
 
 

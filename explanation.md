@@ -64,13 +64,14 @@
 ### Containers
 
 #### Client Side
-* In the docker compose file, I created a container called `yolo_client_cont` that will build the client dockerfile hence create an image called `yolo_client`
+* In the client dockerfile, an image called `yolo client` will be created that will be ran to create a container called `yolo_client_cont` from the docker-compose file.
 
 #### Backend Side
-* In the docker compose file, I created a container called `yolo_back_cont` that will build the backend dockerfile hence create an image called `yolo_backend`
+* In the backend dockerfile, an image called `yolo_backend` will be created that will be ran to create a container called `yolo_back_cont` from the docker-compose file.
+
 
 #### Database Side
-* In the docker compose file, I created a container called `mongo:5.0.16` that will  create an image called `yolo_db`
+* In the docker compose file, I created a container called `mongo:5.0.16` that will create from an image called `yolo_db`
 
 ### Ports
 * The client side is bounded to port 3000

@@ -22,7 +22,7 @@
         version: "{{ yolo_version }}"
         dest: "{{ dest }}"
    
-    - name: Install Dcker and Docker-compose
+    - name: Installing DOcker and Docker-compose
       include_role:
         name: docker
 

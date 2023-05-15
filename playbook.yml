@@ -1,6 +1,6 @@
 ---
 - name: Yolo Application Playbook
-  hosts: localhost
+  hosts: all
   become: yes
 
   vars_files:
@@ -12,17 +12,17 @@
         update_cache: yes
 
   tasks:
-    - name: Install git
+    - name: Git Installation
       include_role:
         name: git
       
-    - name: Clone git repository
+    - name: Repository Cloning
       git:
         repo: "{{ repo }}"
         version: "{{ yolo_version }}"
         dest: "{{ dest }}"
    
-    - name: Install docker and docker-compose
+    - name: Install Dcker and Docker-compose
       include_role:
         name: docker
 

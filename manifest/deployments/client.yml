@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: yolo-app-client
+  name: client
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: yolo-app-client
+      app: client
   template:
     metadata:
       labels:
-        app: yolo-app-client
+        app: client
     spec:
       containers:
-        - name: yolo_client_cont
+        - name: yolo-client-cont
           image: kibetstephanie/yolo-client_image:v1.0.0
           env:
             - name: PORT

@@ -25,17 +25,17 @@ Learn simple DevOps practices with different DevOps tools.
  2. Create the docker-compose file
      
      We will use it to document and configure all of the application's service dependencies. We have 5 services
-    1. database - define database dependancies
-    2. backend - define backend dependancies
-    3. client - define client side dependancies
-    4. volumes - to store persistent data
-    5. networks - connect the backend and client images together
+    * database - define database dependancies
+    * backend - define backend dependancies
+    * client - define client side dependancies
+    * volumes - to store persistent data
+    * networks - connect the backend and client images together
     
     Run the docker compose file
     ```
      docker compose up
      ```
-	 
+
  3. Push to docker hub
 
     Login to Docker Hub from the terminal

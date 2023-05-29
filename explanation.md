@@ -9,7 +9,7 @@ Learn simple DevOps practices with different DevOps tools.
  ## Steps
  1. Create Dockerfile
 
-	Create a Dockerfile
+	This will define how to build the specific Image
 
     Build the image
     ```

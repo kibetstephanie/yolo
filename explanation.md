@@ -9,7 +9,7 @@ Learn simple DevOps practices with different DevOps tools.
  ## Steps
  1. Create Dockerfile
 
-    This will define how to build the specific Image.
+	Create a Dockerfile
 
     Build the image
     ```
@@ -24,7 +24,7 @@ Learn simple DevOps practices with different DevOps tools.
 
  2. Create the docker-compose file
      
-     We will use it to document and configure all of the application's service dependencies. We have 5 services
+     It has 5 services: 
     * database - define database dependancies
     * backend - define backend dependancies
     * client - define client side dependancies

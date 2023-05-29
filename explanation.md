@@ -53,6 +53,6 @@ Learn simple DevOps practices with different DevOps tools.
       sudo docker push {docker username}/{new name of image}:{new tag of image}
       ```
 
-# 2. Configuration Management
+## 2. Configuration Management
 
-# 3. Orchestration
+## 3. Orchestration

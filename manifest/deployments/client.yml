@@ -15,7 +15,7 @@ spec:
       containers:
         - name: yolo-client-cont
           image: kibetstephanie/yolo_client_image:v1.0.0
-          imagePullPolicy: Never
+          #imagePullPolicy: Never
           env:
             - name: PORT
               value: "3000"

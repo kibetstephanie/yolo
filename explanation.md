@@ -98,21 +98,27 @@ Learn simple DevOps practices with different DevOps tools.
 
   Using the cloudshell:
   1. Clone the App
+
     ```
     git clone <repoName>
     ```
   2. Create a cluster
+
     ```
       gcloud container clusters create-auto yolo-cluster --region us-central1
     ```
   3. Deploy to GKE
+
     > Two objects . Deployment and Service
     
     * Deploy the resource to the cluster
+
         ```
         kubectl apply -f deployment.yaml
         ```
+
     * Create service
+    
         ```
         kubectl apply -f service.yaml
         ```

@@ -108,17 +108,15 @@ Learn simple DevOps practices with different DevOps tools.
       gcloud container clusters create-auto yolo-cluster --region us-central1
     ```
   3. Deploy to GKE
-
-    > Two objects . Deployment and Service
     
-    * Deploy the resource to the cluster
+    * Deploy to files in the deployment directory
 
         ```
         kubectl apply -f deployment.yaml
         ```
 
-    * Create service
-    
+    * Create services from the services folder
+
         ```
         kubectl apply -f service.yaml
         ```

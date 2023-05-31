@@ -1,4 +1,5 @@
 # Requirements
+## Check [explanation.md](https://github.com/kibetstephanie/yolo/blob/master/explanation.md) to explain the processes used
 Make sure that you have the following installed:
 - [node](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-18-04) 
 - npm 

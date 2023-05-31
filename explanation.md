@@ -121,7 +121,7 @@ Learn simple DevOps practices with different DevOps tools.
       kubectl apply -f service.yaml
       ```
           
-  ## View Deployed app 
+  ## Check out the deployed app
   In the GCP Console, under services click the link on the client service.
   ```
     http://EXTERNAL_IP

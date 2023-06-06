@@ -1,24 +1,27 @@
-# Requirements
-### Check [explanation.md](https://github.com/kibetstephanie/yolo/blob/master/explanation.md) to explain the processes used
-Make sure that you have the following installed:
-- [node](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-18-04) 
-- npm 
-- [MongoDB](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/) and start the mongodb service with `sudo service mongod start`
+# Learning Devops Practices
 
-## Navigate to the Client Folder 
- `cd client`
+Learn simple DevOps practices with different DevOps tools.
 
-## Run the folllowing command to install the dependencies 
- `npm install`
+## Check [explanation.md](https://github.com/kibetstephanie/yolo/blob/master/explanation.md) to explain the processes used
 
-## Run the folllowing to start the app
- `npm start`
 
-## Open a new terminal and run the same commands in the backend folder
- `cd ../backend`
+## Lessons Learned
 
- `npm install`
+* Infrastructure as Code using: Ansible
+* Implementing CI/CD pipelines
+* Containerization: Docker
+* Cloud Platforms: Google Cloud Platforms
+* Orchestration: Kubernetes
+* Version Control: Git/Github
+## Acknowledgements
 
- `npm start`
+ - [Vinge1718](https://github.com/Vinge1718)
+ - [Samuel Kadima](https://github.com/kadimasum)
+ 
+ 
 
- ### Go ahead a nd add a product (note that the price field only takes a numeric input)
+
+## 🔗 Links
+
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/stephanie-kibet-0610bb1b1/)
+
